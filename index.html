@@ -8,6 +8,7 @@
 
 			.img-circle {
 		   	 	border-radius: 50%;
+		   	 	animation: square-to-circle 2s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
 			}
 
 			.center {
@@ -36,6 +37,34 @@
 				text-align: center
 			}
 
+			@keyframes square-to-circle {
+			  0%  {
+			    border-radius:0 0 0 0;
+			    background:coral;
+			    transform:rotate(0deg);
+			  }
+			  25%  {
+			    border-radius:50% 0 0 0;
+			    background:darksalmon;
+			    transform:rotate(45deg);
+			  }
+			  50%  {
+			    border-radius:50% 50% 0 0;
+			    background:indianred;
+			    transform:rotate(90deg);
+			  }
+			  75%  { 
+			    border-radius:50% 50% 50% 0;
+			    background:lightcoral;
+			    transform:rotate(135deg);
+			  }
+			  100% {  
+			    border-radius:50%;
+			    background:darksalmon;
+			    transform:rotate(180deg);
+			  }
+			}
+
 
 		</style>
 
@@ -57,7 +86,7 @@
 
 		</div>
 
-		<img class="img-circle center" align="middle" src="https://scontent-sjc3-1.cdninstagram.com/vp/81723b6d61b09b9d936ab3389ff93591/5B247226/t51.2885-19/s150x150/26154393_2038636669715860_8029451929786515456_n.jpg">
+		<img class="img-circle center " align="middle" src="https://scontent-sjc3-1.cdninstagram.com/vp/81723b6d61b09b9d936ab3389ff93591/5B247226/t51.2885-19/s150x150/26154393_2038636669715860_8029451929786515456_n.jpg">
 		
 		<p class = description>
 			SJSU '20 . Software Engineer . 
